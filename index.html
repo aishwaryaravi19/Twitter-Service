@@ -1,0 +1,17 @@
+<body>
+    <script>
+       function myCall(){
+          // const res=fetch("/poststatus")
+         const res=  fetch("/poststatus", {
+  method: "POST", 
+  body: "hi"
+}).then(res => {
+  console.log("Request complete! response:", res);
+});
+
+        }
+    </script>
+   <h1>hello</h1>
+   
+   <button type="submit" onclick="myCall()" class="btn btn-primary">Submit</button>
+</body>
